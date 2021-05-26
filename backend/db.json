@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "Geladeira Turbo",
+      "email": "geladeira@geladeira.com",
+      "id": 1
+    },
+    {
+      "name": "Joao",
+      "email": "joao@joao.com",
+      "id": 2
+    },
+    {
+      "name": "Caneta",
+      "email": "caneta@caneta.com",
+      "id": 3
+    }
+  ]
+}

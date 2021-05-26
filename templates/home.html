@@ -1,0 +1,29 @@
+<section class="container">
+    <div class="row">
+        <h3>Usuários</h3>
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>
+                    <a href="/user/edit/{{user.id}}" class="btn blue">Editar</a>
+                    <button ng-click="deleteUser(user)" class="btn red">Deletar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="row">
+        <a href="/user/add" class="btn green">Adicionar</a>
+    </div>
+</section>

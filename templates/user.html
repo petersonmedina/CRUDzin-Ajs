@@ -1,0 +1,16 @@
+<section class="container row" ng-controller="userController">
+    <h3 ng-if="!edit">Adicionar Usuário</h3>
+    <h3 ng-if="edit">Editar Usuário</h3>
+    <div class="row">
+        <div class="input-field col m6 s12">
+            <input id="name" type="text" ng-model="user.name" class="validate" placeholder="Nome">
+        </div>
+        <div class="input-field col m6 s12">
+            <input id="email" type="text" ng-model="user.email" class="validate" placeholder="E-mail">
+        </div>
+    </div>
+    <a href="/" class="btn green">Cancelar</a>
+    <button ng-if="!edit" ng-click="addUser(user)" class="btn blue">Adicionar</button>
+    <button ng-if="edit" ng-click="updateUser(user)" class="btn blue">Salvar</button>
+    {{message}}
+</section>
